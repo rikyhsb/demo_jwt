@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo JWT</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" i></script>
+	<script src="jwt.js"></script>
+	<style type="text/css">
+		body {
+			margin-top: 25px;
+		}
+
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>DEMO IMPLEMENTASI JWT PHP & JAVASCRIPT</h3>
+		<div class="row">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Generate JWT</h5>
+						<form>
+						  <div class="form-group">
+						    <label>Username</label>
+						    <input type="text" class="form-control" id="username" placeholder="Masukkan Username">
+						  </div>
+						  <button type="button" id="generate" class="btn btn-primary">Generate JWT</button>
+						</form>
+						<div id="output_generate" class="alert alert-info" style="display: none; margin-top: 15px; font-family: monospace; font-weight: bold;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="margin-top: 25px;"></div>
+
+		<div class="row">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Cek JWT</h5>
+						<form>
+						  <div class="form-group">
+						    <label>Username</label>
+						    <textarea class="form-control" id="jwt" rows=3 placeholder="Masukkan JWT"></textarea>
+						  </div>
+						  <button type="button" id="check" class="btn btn-primary">Cek JWT</button>
+						</form>
+						<div style="margin-top: 15px;"></div>
+						<div id="output_check" class="alert alert-info" style="display: none; margin-top: 15px; font-family: monospace; font-weight: bold;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
